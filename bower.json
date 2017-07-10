@@ -1,0 +1,20 @@
+{
+  "name": "project 6",
+  "authors": [
+    "Justin Javorek <justinjavorek@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "^3.4.2"
+  }
+}

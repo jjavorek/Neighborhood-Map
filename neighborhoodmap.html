@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neighborhood Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script language="JavaScript" type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <h3>Neighborhood Map</h3>
+  
+  <div id="map"></div>
+  <div class="locations-container">
+    <input id="search" placeholder="Search by name" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+    <div data-bind="foreach: locations">
+      <a data-bind="visible: $data.isVisible, text: $data.name, click: handleClickedListItem"></a>
+    </div>
+  </div>
+  
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoW2PP_31Q1Z21JpiemuOdZQWshCiZ-Zc&libraries=places&callback=initMap" async defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+  <script src="app.js"></script>
+  </body>
+</html>
